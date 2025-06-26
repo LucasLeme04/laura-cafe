@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;;
+}
+
+body {
+    /* Fonte padrão do site */
+}
+
+/* Estilizando a select-menu */
+.select-menu {
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.select-menu ul {
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0 auto; /* Centraliza o menu na tela */
+    padding: 0 10px;  /* Espaçamento interno do menu */
+}
+
+.select-menu ul li {
+    float: left; /* Alinha os itens do menu na horizontal */
+}
+
+.select-menu ul li a {
+    display: block; /* Exibe os links como blocos */
+    color: #fff; /* Cor do texto dos links */
+    padding: 20px; /* Espaçamento interno dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    transition: all 300ms ease-in-out; /* Transição suave para os links */
+}
+
+.select-menu ul li a:hover {
+    background: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade ao passar o mouse */
+}
+
+.inicio {
+    padding: 0 30px;
+    max-width: 100%; /* Largura máxima da grid */
+    margin: 0 auto; /* Centraliza a grid na tela */
+    padding-top: 73px; /* Espaçamento superior da grid */
+    height: 100vh; /* Altura total da tela */
+    background: turquoise; /* Cor de fundo da tela */
+}
+
+.sobre-nos {
+    padding: 0 30px;
+    max-width: 100%; /* Largura máxima da grid */
+    margin: 0 auto; /* Centraliza a grid na tela */
+    padding-top: 73px; /* Espaçamento superior da grid */
+    height: 100vh; /* Altura total da tela */
+    background: lightcoral; /* Cor de fundo da tela */
+}
+
+.menu {
+    padding: 0 30px;
+    max-width: 100%; /* Largura máxima da grid */
+    margin: 0 auto; /* Centraliza a grid na tela */
+    padding-top: 73px; /* Espaçamento superior da grid */
+    height: 100vh; /* Altura total da tela */
+    background: lightblue; /* Cor de fundo da tela */
+}
+
+.contato {
+    padding: 0 30px;
+    max-width: 100%; /* Largura máxima da grid */
+    margin: 0 auto; /* Centraliza a grid na tela */
+    padding-top: 73px; /* Espaçamento superior da grid */
+    height: 100vh; /* Altura total da tela */
+    background: lightgreen; /* Cor de fundo da tela */
+}
