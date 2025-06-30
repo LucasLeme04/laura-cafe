@@ -1,4 +1,5 @@
 // qualquer coisa estranha no css pode ser proveniente dessas stylesheets (App ou index)
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import NavbarComponent from './components/Navbar'
 import Footer from './components/Footer'
