@@ -1,8 +1,43 @@
+/* ----------------------------- NAVBAR -----------------------------*/
+
+.nav-custom {
+  background-color: #F6F2F0;
+  z-index: 3 !important;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.nav-item {
+  color: #654127;
+}
+
+/* ----------------------------- GLOBAL STYLES -----------------------------*/
+
+.btn-custom {
+    background-color: #D0A450;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+    font-size: large;
+}
+
+.btn-custom:hover {
+    background-color: #b88a3c;
+    color: #ffffff;
+}
+
 /* ----------------------------- FOOTER ---------------------------------*/
 
 footer {
     width: 100% !important;
-     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #442714;
+    color: #ffffff;
+}
+
+footer h4 {
+    color: #F8ECE8;
 }
 
 .footer-container {
@@ -27,5 +62,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.2);
-    color: #a5a5a5;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: smaller;
 }
