@@ -41,7 +41,7 @@ function Footer() {
              {/* Redes Sociais */}
                 <Col lg={2} md={6} className="footer-item">
                   <h5 className="playfair-display-regular">Redes sociais</h5>
-                  <ul>
+                  <ul className="list-unstyled d-flex justify-content-center">
                      {[FaInstagram, FaFacebook, FaWhatsapp].map(
                         (Icon, i) => (
                             <Button
