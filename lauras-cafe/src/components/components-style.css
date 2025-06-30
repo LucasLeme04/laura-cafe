@@ -1,0 +1,31 @@
+/* ----------------------------- FOOTER ---------------------------------*/
+
+footer {
+    width: 100% !important;
+     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    /* align-items: center; */
+}
+
+.footer-item {
+    padding: 10px;
+    flex: 1;
+}
+
+.btn-icon-footer {
+    padding: 0.2rem;
+    color: white;
+}
+
+.copyright-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #a5a5a5;
+}
