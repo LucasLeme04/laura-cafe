@@ -19,8 +19,8 @@ function Footer() {
           <section>
             <Row className="footer-container">
               <Col lg={4} md={6} className="footer-item">
-                <h5>Horário de Funcionamento</h5>
-                <p>
+                <h5 className="playfair-display-regular">Horário de Funcionamento</h5>
+                <p className="lato-regular">
                   7h00 - 18h00 de segunda à sábado
                   <br />
                   7:00 - 14h00 nos domingos e feriados
@@ -28,8 +28,8 @@ function Footer() {
               </Col>
              {/* Endereço */}
              <Col lg={4} md={6} className="footer-item">
-               <h5>Endereço</h5>
-               <p>
+               <h5 className="playfair-display-regular">Endereço</h5>
+               <p className="lato-regular">
                  Rua Exemplo, 123 - Centro
                  <br />
                  Cidade - Estado
@@ -40,7 +40,7 @@ function Footer() {
 
              {/* Redes Sociais */}
                 <Col lg={2} md={6} className="footer-item">
-                  <h5>Redes sociais</h5>
+                  <h5 className="playfair-display-regular">Redes sociais</h5>
                   <ul>
                      {[FaInstagram, FaFacebook, FaWhatsapp].map(
                         (Icon, i) => (
@@ -62,7 +62,7 @@ function Footer() {
         </Container>
 
         {/* Copyright */}
-        <div className="copyright-footer">
+        <div className="copyright-footer lato-regular">
             Laura’s Café &copy; {getYear()} Todos os direitos reservados. | CNPJ 12.123.456/0001-00
         </div>
       </footer>
