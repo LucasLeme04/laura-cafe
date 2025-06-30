@@ -35,7 +35,9 @@ function NavbarComponent() {
               Menu
               </Nav.Link>
               <Nav.Link className="mx-2">
-                <Button className="btn-custom lato-bold">Contato</Button>
+                <Button 
+                className="btn-custom lato-bold"
+                variant='warning'>Contato</Button>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
