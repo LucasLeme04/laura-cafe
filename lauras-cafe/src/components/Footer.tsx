@@ -19,7 +19,7 @@ function Footer() {
           <section>
             <Row className="footer-container">
               <Col lg={4} md={6} className="footer-item">
-                <h4>Horário de Funcionamento</h4>
+                <h5>Horário de Funcionamento</h5>
                 <p>
                   7h00 - 18h00 de segunda à sábado
                   <br />
@@ -28,7 +28,7 @@ function Footer() {
               </Col>
              {/* Endereço */}
              <Col lg={4} md={6} className="footer-item">
-               <h4>Endereço</h4>
+               <h5>Endereço</h5>
                <p>
                  Rua Exemplo, 123 - Centro
                  <br />
@@ -40,16 +40,17 @@ function Footer() {
 
              {/* Redes Sociais */}
                 <Col lg={2} md={6} className="footer-item">
-                  <h4>Redes sociais</h4>
+                  <h5>Redes sociais</h5>
                   <ul>
                      {[FaInstagram, FaFacebook, FaWhatsapp].map(
                         (Icon, i) => (
                             <Button
                                 key={i}
                                 className="btn-icon-footer"
+                                variant= "outline"
                                 href="#!"
                             >
-                                <Icon size={24} />
+                            <Icon size={24} />
                         </Button>
                      )
                     )}
