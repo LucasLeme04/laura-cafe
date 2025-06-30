@@ -1,4 +1,4 @@
-import { Carousel, Col, Row } from 'react-bootstrap'
+import { Carousel, Col, Row, Container } from 'react-bootstrap'
 
 // Início
 // Basicamente onde vai ter o carrosel de imagens (que ainda precisamos fazer)
@@ -6,7 +6,9 @@ import { Carousel, Col, Row } from 'react-bootstrap'
 function Home() {
     return (
         <>
-        
+        <Container className="home-custom">
+
+        </Container>
         </>
     );
 
