@@ -9,6 +9,7 @@ function NavbarComponent() {
         <>
         <Navbar className="nav-custom" expand="lg" variant="light" fixed="top">
         <Container>
+            {/* Logo à esquerda */}
           <Navbar.Brand className="fs-4 fw-bold">
             <img
               src="./src/assets/logo.png"
@@ -22,18 +23,19 @@ function NavbarComponent() {
           <Navbar.Collapse id="basic-navbar-nav">
             </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
-            <Nav className="fs-5">
-              <Nav.Link className="mx-2 nav-item">
+            {/* Links à direita */}
+            <Nav className="fs-5 nav-items">
+              <Nav.Link className="mx-2 nav-item lato-regular">
                 Início
               </Nav.Link>
-              <Nav.Link className="mx-2 nav-item">
+              <Nav.Link className="mx-2 nav-item lato-regular">
                 Sobre Nós
               </Nav.Link>
-              <Nav.Link className="mx-2 nav-item">
-                Menu
+              <Nav.Link className="mx-2 nav-item lato-regular">
+              Menu
               </Nav.Link>
               <Nav.Link className="mx-2">
-                <Button className="btn-custom">Contato </Button>
+                <Button className="btn-custom lato-bold">Contato</Button>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
