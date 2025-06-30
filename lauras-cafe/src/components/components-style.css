@@ -40,6 +40,13 @@
     color: #ffffff;
 }
 
+.btn-custom:focus {
+    background-color: #ecaf44;
+    color: #ffffff;
+}
+
+
+
 /* ----------------------------- FOOTER ---------------------------------*/
 
 footer {
@@ -66,6 +73,22 @@ footer h4 {
 .footer-item {
     padding: 10px;
     flex: 1;
+}
+
+.footer-item h5 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.footer-item h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid #b88a3c;
 }
 
 .btn-icon-footer {
