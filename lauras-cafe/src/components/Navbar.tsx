@@ -7,7 +7,7 @@ import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 function NavbarComponent() {
     return (
         <>
-        <Navbar className="nav-custom shadow-sm" expand="lg" variant="light" fixed="top">
+        <Navbar className="nav-custom" expand="lg" variant="light" fixed="top">
         <Container>
           <Navbar.Brand className="fs-4 fw-bold">
             <img
