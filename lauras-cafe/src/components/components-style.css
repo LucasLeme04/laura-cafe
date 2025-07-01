@@ -45,7 +45,57 @@
     color: #ffffff;
 }
 
+/* --------------------------MENU SECTION --------------------------*/
 
+.section-title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #D0A450; /* Usando a cor do seu botão para consistência */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-image-container {
+  height: 300px; /* Altura fixa para o contêiner da imagem */
+  overflow: hidden; /* Garante que a imagem não transborde */
+}
+
+/* Estilo para a imagem do produto */
+.product-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cobre todo o espaço do contêiner */
+  object-position: center; /* Centraliza a imagem dentro do quadro */
+}
+
+.product-card-body {
+  padding: 1.25rem;
+  flex: 1 1 auto;
+}
+
+.card-sabor {
+  color: #555;
+  font-size: 0.9em;
+}
 
 /* ----------------------------- FOOTER ---------------------------------*/
 
