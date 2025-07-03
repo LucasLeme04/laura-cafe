@@ -14,11 +14,10 @@ function Footer() {
 
      return (
       <footer>
-        <Container>
+        <Container id ="footer">
           {/* Horário de Funcionamento */}
-          <section>
             <Row className="footer-container">
-              <Col lg={4} md={6} className="footer-item">
+              <Col xs={6} md={4} className="footer-item">
                 <h5 className="playfair-display-regular">Horário de Funcionamento</h5>
                 <p className="lato-regular">
                   7h00 - 18h00 de segunda à sábado
@@ -27,7 +26,7 @@ function Footer() {
                 </p>
               </Col>
              {/* Endereço */}
-             <Col lg={4} md={6} className="footer-item">
+             <Col xs={6} md={4} className="footer-item">
                <h5 className="playfair-display-regular">Endereço</h5>
                <p className="lato-regular">
                  Rua Exemplo, 123 - Centro
@@ -39,9 +38,9 @@ function Footer() {
              </Col>
 
              {/* Redes Sociais */}
-                <Col lg={2} md={6} className="footer-item">
+                <Col xs={3} md={2} className="footer-item">
                   <h5 className="playfair-display-regular">Redes sociais</h5>
-                  <ul className="list-unstyled d-flex justify-content-center">
+                  <ul className="list-unstyled d-flex">
                      {[FaInstagram, FaFacebook, FaWhatsapp].map(
                         (Icon, i) => (
                             <Button
@@ -58,7 +57,6 @@ function Footer() {
                 </Col>
               
             </Row>
-          </section>
         </Container>
 
         {/* Copyright */}
