@@ -6,9 +6,11 @@ import { Carousel, Col, Row, Container } from 'react-bootstrap'
 function Home() {
     return (
         <>
+        <section id="home"> 
         <Container className="home-custom">
 
         </Container>
+        </section>
         </>
     );
 
