@@ -34,7 +34,7 @@ function Menu() {
     return (
         <section id="cardapio" className="py-5 bg-light">
             <Container>
-                <h2 className="text-center mb-4 playfair-display-regular section-titlle">Nossos Produtos</h2>
+                <h2 className="text-center mb-4 playfair-display-regular section-title">Nossos Produtos</h2>
                 <Row>
                     {produtos.map((produto, index) => (
                         <Col key={index} md={4} className="mb-4">
