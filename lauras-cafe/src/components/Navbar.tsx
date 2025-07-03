@@ -25,19 +25,23 @@ function NavbarComponent() {
           <Navbar.Collapse className="justify-content-end">
             {/* Links à direita */}
             <Nav className="fs-5 nav-items">
-              <Nav.Link className="mx-2 nav-item lato-regular">
+              <Nav.Link className="mx-2 nav-item lato-bold"
+              onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}>
                 Início
               </Nav.Link>
-              <Nav.Link className="mx-2 nav-item lato-regular">
-                Sobre Nós
+              <Nav.Link className="mx-2 nav-item lato-bold"
+              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
+                Sobre nós
               </Nav.Link>
-              <Nav.Link className="mx-2 nav-item lato-regular">
-              Menu
+              <Nav.Link className="mx-2 nav-item lato-bold"
+              onClick={() => document.getElementById('cardapio')?.scrollIntoView({ behavior: 'smooth' })}>
+                Menu
               </Nav.Link>
               <Nav.Link className="mx-2">
                 <Button 
                 className="btn-custom lato-bold"
-                variant='warning'>Contato</Button>
+                variant='warning'
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Contato</Button>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

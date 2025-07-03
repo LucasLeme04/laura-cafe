@@ -9,12 +9,13 @@ import { CiMail } from "react-icons/ci";
 function Contact() {
     return (
         <> 
+        <section id="contact"> 
         <Col>
         <Row>
             
         </Row>
         </Col>
-        
+        </section> 
         </>
     );
 

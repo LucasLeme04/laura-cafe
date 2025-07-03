@@ -6,13 +6,14 @@ import { Col, Row } from 'react-bootstrap';
 
 function About() {
     return (
-        <> 
+        <>
+        <section id="about"> 
         <Col>
         <Row>
             
         </Row>
         </Col>
-        
+        </section>
         </>
     );
 
