@@ -25,6 +25,10 @@
 
 /* ----------------------------- GLOBAL STYLES -----------------------------*/
 
+section {
+  scroll-margin-top: 110px;
+}
+
 .btn-custom {
     background-color: #D0A450;
     color: #ffffff;
@@ -57,12 +61,13 @@
   content: '';
   position: absolute;
   display: block;
-  width: 80px;
-  height: 3px;
+  width: 200px;
+  height: 2px;
   background: #D0A450; /* Usando a cor do seu botão para consistência */
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+
 }
 
 .product-card {
@@ -89,8 +94,12 @@
 }
 
 .product-card-body {
-  padding: 1.25rem;
-  flex: 1 1 auto;
+    display: flex;
+    padding: 1.25rem;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: -webkit-left;
 }
 
 .card-sabor {
