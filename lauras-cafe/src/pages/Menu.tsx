@@ -4,6 +4,9 @@ import '../components/components-style.css';
 import cappuccinoImg from '../assets/cappuccino.jpg';
 import macchiatoImg from '../assets/macchiato.jpg';
 import geladoImg from '../assets/gelado.jpg';
+import ristrettoImg from '../assets/cafe-ristretto.png';
+import mochaImg from '../assets/cafe-mocha.jpg';
+import coadoImg from '../assets/cafe-coado.jpg';
 
 // Menu de Produtos
 // Lista dos cafés com imagens e descrições (utilizar um card para cada produto!)
@@ -27,6 +30,24 @@ const produtos = [
         titulo: 'Café Gelado',
         descricao: 'Café servido com gelo, perfeito para dias quentes.',
         sabor: 'Refrescante, suave'
+    },
+    {
+        img: ristrettoImg,
+        titulo: 'Café Ristretto',
+        descricao: 'Refrescante e aromático, o café gelado é extraído a frio para preservar suavidade e doçura natural, servido com gelo e, se desejar, um toque de leite ou xarope.',
+        sabor: 'Intenso, encorpado'
+    },
+    {
+        img: mochaImg,
+        titulo: 'Café Mocha',
+        descricao: 'Uma combinação indulgente de espresso, chocolate e leite vaporizado, coberta com chantilly — o equilíbrio perfeito entre a força do café e a doçura do cacau.',
+        sabor: 'Doce, achocolatado'
+    },
+    {
+        img: coadoImg,
+        titulo: 'Café Coado',
+        descricao: 'Método clássico e afetivo, o café coado realça os sabores sutis dos grãos, revelando notas florais, frutadas ou achocolatadas em uma bebida leve e aromática.',
+        sabor: 'Intenso, aromático'
     }
 ];
 
