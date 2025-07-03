@@ -75,7 +75,7 @@ section {
 .product-card {
   background-color: #fff;
   border: 1px solid #dee2e6;
-  border-radius: 0.375rem;
+  border-radius: 8px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ section {
 .product-card-img {
   width: 100%;
   height: 100%;
-  border-radius: 0.375rem 0.375rem 0 0; /* Bordas arredondadas no topo */
+  border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
   object-fit: cover; /* Cobre todo o espaço do contêiner */
   object-position: center; /* Centraliza a imagem dentro do quadro */
 }
