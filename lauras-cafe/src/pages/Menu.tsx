@@ -1,5 +1,10 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+
 import '../components/components-style.css';
+import ProductCard from '../pages/ProductCard';
 
 import cappuccinoImg from '../assets/cappuccino.jpg';
 import macchiatoImg from '../assets/macchiato.jpg';
@@ -11,30 +16,30 @@ import coadoImg from '../assets/cafe-coado.jpg';
 // Menu de Produtos
 // Lista dos cafés com imagens e descrições (utilizar um card para cada produto!)
 
-// Imagens dos produtos
+// Importando imagens dos produtos
 const produtos = [
     {
         img: cappuccinoImg,
         titulo: 'Cappuccino',
-        descricao: 'Café expresso com leite vaporizado e espuma de leite.',
+        descricao: 'A harmonia perfeita entre espresso, leite vaporizado e uma cremosa espuma de leite. Um clássico reconfortante.',
         sabor: 'Intenso, cremoso'
     },
     {
         img: macchiatoImg,
         titulo: 'Macchiato',
-        descricao: 'Café expresso com uma pequena quantidade de leite vaporizado.',
+        descricao: 'Um espresso intenso "manchado" com um toque de leite vaporizado, realçando a força e o sabor do café.',
         sabor: 'Forte, encorpado'
     },
     {
         img: geladoImg,
         titulo: 'Café Gelado',
-        descricao: 'Café servido com gelo, perfeito para dias quentes.',
+        descricao: 'Extraído a frio para um sabor suave e menos ácido. A bebida ideal para se refrescar com qualidade e sabor.',
         sabor: 'Refrescante, suave'
     },
     {
         img: ristrettoImg,
         titulo: 'Café Ristretto',
-        descricao: 'Refrescante e aromático, o café gelado é extraído a frio para preservar suavidade e doçura natural, servido com gelo e, se desejar, um toque de leite ou xarope.',
+        descricao: 'Uma extração curta e ousada de espresso, resultando em uma bebida mais concentrada, doce e com menos amargor.',
         sabor: 'Intenso, encorpado'
     },
     {
@@ -52,28 +57,47 @@ const produtos = [
 ];
 
 function Menu() {
+
+    // Configuração do carrossel
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3,
+            slidesToSlide: 1
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+            slidesToSlide: 1
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            slidesToSlide: 1
+        }
+    };
+
     return (
         <section id="cardapio" className="py-5 bg-light">
             <Container>
                 <h2 className="text-center mb-4 playfair-display-regular section-title">Nossos Produtos</h2>
-                <Row>
-                    {produtos.map((produto, index) => (
-                        <Col key={index} md={4} className="mb-4">
-                            <div className="product-card h-100">
-                                <div className="product-card-image-container">
-                                    <img src={produto.img} alt={produto.titulo} className="product-card-img" />
-                                </div>
-
-                                <div className="product-card-body">
-                                    <p className="text-muted lato-regular mb-1">Cafés</p>
-                                    <h4 className="playfair-display-regular">{produto.titulo}</h4>
-                                    <p className="lato-regular">{produto.descricao}</p>
-                                    <p className="lato-regular fw-bold card-sabor">Sabor: <span className="fw-normal">{produto.sabor}</span></p>
-                                </div>
-                            </div>
-                        </Col>
+                <div className="espacador">
+                    <Carousel
+                    responsive={responsive}
+                    infinite={true}
+                    additionalTransfrom={0}
+                    >
+                    {produtos.map((produto) => (
+                        <ProductCard
+                            key={produto.titulo}
+                            img={produto.img}
+                            titulo={produto.titulo}
+                            descricao={produto.descricao}
+                            sabor={produto.sabor}
+                        />
                     ))}
-                </Row>
+                </Carousel>
+                </div>
                 <hr className="my-5" />
             </Container>
         </section>
