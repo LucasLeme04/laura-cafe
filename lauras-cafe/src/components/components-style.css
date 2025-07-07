@@ -54,6 +54,7 @@ section {
 /* --------------------------MENU SECTION --------------------------*/
 
 .section-title {
+  color: var(--marrom_tipo3);
   position: relative;
   padding-bottom: 2px;
   margin-bottom: 30px;
@@ -66,7 +67,7 @@ section {
   display: block;
   width: 200px;
   height: 2px;
-  background: #D0A450;
+  background: var(--dourado_tipo1);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -129,21 +130,20 @@ section {
 
 /* Categoria */
 .product-card-body > p:first-child {
-  color: #6c757d;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
 
 /* Título do produto */
 .product-card-body h4 {
-  color: #212529;
+  color: var(--marrom_tipo1);
   margin-bottom: 0.75rem;
   font-size: 1.25rem;
 }
 
 /* Descrição */
 .product-card-body p:nth-of-type(2) {
-  color: #495057;
+  color: var(--cinza_tipo1);
   flex-grow: 1;
   margin-bottom: 1rem;
   display: -webkit-box;
@@ -152,7 +152,7 @@ section {
 
 /* Sabor */
 .card-sabor {
-  color: #555;
+  color: var(--marrom_tipo1);
   font-size: 0.9em;
   margin-top: auto;
 }
