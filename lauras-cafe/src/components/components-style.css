@@ -57,6 +57,7 @@ section {
   position: relative;
   padding-bottom: 15px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .section-title::after {
@@ -65,13 +66,20 @@ section {
   display: block;
   width: 200px;
   height: 2px;
-  background: #D0A450; /* Usando a cor do seu botão para consistência */
+  background: #D0A450;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Espaçamento entre os cards */
+}
+
+/* Container principal do card */
 .product-card {
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -79,34 +87,87 @@ section {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   display: flex;
   flex-direction: column;
+  height: 100%; /* Ocupa toda altura disponível */
+  transition: transform 0.3s ease; /* Efeito hover opcional */
 }
 
+/* Efeito ao passar o mouse (opcional) */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Container da imagem */
 .product-card-image-container {
-  height: 300px; /* Altura fixa para o contêiner da imagem */
-  overflow: hidden; /* Garante que a imagem não transborde */
+  height: 200px; /* Reduzi a altura para melhor proporção */
+  overflow: hidden;
+  position: relative;
 }
 
-/* Estilo para a imagem do produto */
+/* Imagem do produto */
 .product-card-img {
   width: 100%;
   height: 100%;
-  border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
-  object-fit: cover; /* Cobre todo o espaço do contêiner */
-  object-position: center; /* Centraliza a imagem dentro do quadro */
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease; /* Zoom suave ao hover */
 }
 
+/* Efeito de zoom na imagem (opcional) */
+.product-card:hover .product-card-img {
+  transform: scale(1.05);
+}
+
+/* Corpo do card */
 .product-card-body {
-    display: flex;
-    padding: 1.25rem;
-    flex: 1 1 auto;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: -webkit-left;
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Espaçamento entre elementos */
 }
 
+/* Categoria */
+.product-card-body > p:first-child {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Título do produto */
+.product-card-body h4 {
+  color: #212529;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+/* Descrição */
+.product-card-body p:nth-of-type(2) {
+  color: #495057;
+  flex-grow: 1; /* Faz a descrição ocupar espaço disponível */
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limita a 3 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Sabor */
 .card-sabor {
   color: #555;
   font-size: 0.9em;
+  margin-top: auto; /* Empurra para baixo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .product-card-image-container {
+    height: 180px;
+  }
+  
+  .product-card-body {
+    padding: 1rem;
+  }
 }
 
 /* ----------------------------- FOOTER ---------------------------------*/
