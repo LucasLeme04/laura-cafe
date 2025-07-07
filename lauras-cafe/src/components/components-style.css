@@ -55,7 +55,7 @@ section {
 
 .section-title {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 2px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -76,7 +76,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px; /* Espaçamento entre os cards */
+  padding: 10px;
 }
 
 /* Container principal do card */
@@ -87,11 +87,11 @@ section {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   display: flex;
   flex-direction: column;
-  height: 100%; /* Ocupa toda altura disponível */
-  transition: transform 0.3s ease; /* Efeito hover opcional */
+  height: 100%;
+  transition: transform 0.3s ease;
 }
 
-/* Efeito ao passar o mouse (opcional) */
+/* Efeito ao passar o mouse */
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -99,7 +99,7 @@ section {
 
 /* Container da imagem */
 .product-card-image-container {
-  height: 200px; /* Reduzi a altura para melhor proporção */
+  height: 300px;
   overflow: hidden;
   position: relative;
 }
@@ -110,10 +110,10 @@ section {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.5s ease; /* Zoom suave ao hover */
+  transition: transform 0.5s ease;
 }
 
-/* Efeito de zoom na imagem (opcional) */
+/* Efeito de zoom na imagem */
 .product-card:hover .product-card-img {
   transform: scale(1.05);
 }
@@ -124,7 +124,7 @@ section {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Espaçamento entre elementos */
+  gap: 0.5rem;
 }
 
 /* Categoria */
@@ -144,11 +144,9 @@ section {
 /* Descrição */
 .product-card-body p:nth-of-type(2) {
   color: #495057;
-  flex-grow: 1; /* Faz a descrição ocupar espaço disponível */
+  flex-grow: 1;
   margin-bottom: 1rem;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limita a 3 linhas */
-  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -156,7 +154,7 @@ section {
 .card-sabor {
   color: #555;
   font-size: 0.9em;
-  margin-top: auto; /* Empurra para baixo */
+  margin-top: auto;
 }
 
 /* Responsividade */
