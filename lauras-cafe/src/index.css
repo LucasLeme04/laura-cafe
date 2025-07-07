@@ -7,6 +7,24 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #ffffff;
 
+  /* ---------------------------cores--------------------------- */
+--verde_tipo1: #0D393A;
+--verde_tipo2: #125959;
+--verde_tipo3: #027D7E;
+--marrom_tipo1: #442815;
+--marrom_tipo2: #4B2C18;
+--marrom_tipo3: #654128;
+--marrom_tipo4: #8F613C;
+--cinza_tipo1: #33302F;
+--bege_tipo1: #F7EBE7;
+--bege_tipo2: #F6F1F0;
+--dourado_tipo1: #D39D38;
+
+
+
+
+  /* ----------------------------------------------------------- */
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
