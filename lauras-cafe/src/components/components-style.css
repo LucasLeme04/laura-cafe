@@ -7,12 +7,13 @@
   box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, 0.2), 1px 4px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
 .nav-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
 }
 
 .nav-item {
@@ -30,25 +31,25 @@ section {
 }
 
 .btn-custom {
-    background-color: #D0A450;
-    color: #ffffff;
-    border: none;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: large;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    padding: 8px 20px 8px 20px;
-    
+  background-color: #D0A450;
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: large;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 8px 20px 8px 20px;
+
 }
 
 .btn-custom:hover {
-    background-color: #b88a3c;
-    color: #ffffff;
+  background-color: #b88a3c;
+  color: #ffffff;
 }
 
 .btn-custom:focus {
-    background-color: #ecaf44;
-    color: #ffffff;
+  background-color: #ecaf44;
+  color: #ffffff;
 }
 
 /* --------------------------MENU SECTION --------------------------*/
@@ -75,9 +76,34 @@ section {
 
 .react-multi-carousel-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  padding: 40px; /* Espaçamento entre os cards */
+}
+
+/* Modificações nas setas */
+.react-multi-carousel-list .react-multiple-carousel__arrow {
+  background-color: transparent !important; /* Fundo transparente */
+  z-index: 1;
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow::before {
+  color: var(--marrom_tipo1);
+  font-size: 50px !important; /* Tamanho da seta */
+}
+
+/* Posicionamento das setas */
+.react-multi-carousel-list .react-multiple-carousel__arrow--left {
+    left: 0;
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow--right {
+    right: 0;
+}
+
+/* Efeito de aumentar a seta ao passar o mouse */
+.react-multi-carousel-list .react-multiple-carousel__arrow:hover::before {
+  background-color: transparent;
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
 }
 
 /* Container principal do card */
@@ -129,7 +155,7 @@ section {
 }
 
 /* Categoria */
-.product-card-body > p:first-child {
+.product-card-body>p:first-child {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
@@ -162,7 +188,7 @@ section {
   .product-card-image-container {
     height: 180px;
   }
-  
+
   .product-card-body {
     padding: 1rem;
   }
@@ -171,30 +197,30 @@ section {
 /* ----------------------------- FOOTER ---------------------------------*/
 
 footer {
-    width: 100% !important;
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #442714;
-    color: #ffffff;
+  width: 100% !important;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #442714;
+  color: #ffffff;
 }
 
 footer h4 {
-    color: #F8ECE8;
+  color: #F8ECE8;
 }
 
 .footer-container {
-    padding: 30px 10px 0px 10px;
-    /* margin-top: 1rem; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    /* align-items: center; */
-    text-align: -webkit-left;
+  padding: 30px 10px 0px 10px;
+  /* margin-top: 1rem; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  /* align-items: center; */
+  text-align: -webkit-left;
 }
 
 .footer-item {
-    padding: 10px;
-    flex: 1;
+  padding: 10px;
+  flex: 1;
 }
 
 .footer-item h5 {
@@ -214,15 +240,15 @@ footer h4 {
 }
 
 .btn-icon-footer {
-    padding: 0.2rem;
-    color: white;
+  padding: 0.2rem;
+  color: white;
 }
 
 .copyright-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #ffffff;
-    font-weight: 200;
-    font-size: smaller;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-weight: 200;
+  font-size: smaller;
 }
