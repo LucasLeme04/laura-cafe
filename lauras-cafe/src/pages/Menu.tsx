@@ -83,6 +83,7 @@ function Menu() {
                 <h2 className="text-center mb-4 playfair-display-regular section-title">Nossos Produtos</h2>
                 <div className="espacador">
                     <Carousel
+                    arrows={true}
                     responsive={responsive}
                     infinite={true}
                     additionalTransfrom={0}
