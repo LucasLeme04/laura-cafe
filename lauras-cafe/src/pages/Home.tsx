@@ -1,19 +1,17 @@
-import { Carousel, Col, Row, Container } from 'react-bootstrap'
+// Arquivo: pages/Home.tsx
 
-// Início
-// Basicamente onde vai ter o carrosel de imagens (que ainda precisamos fazer)
-// Seria interessante colocar frases de efeito e botões também
+import { Container } from 'react-bootstrap';
+import HomeCarousel from '../components/HomeCarousel';
+import '../App.css'; // Importando o CSS
+
 function Home() {
-    return (
-        <>
-        <section id="home"> 
-        <Container className="home-custom">
-
-        </Container>
-        </section>
-        </>
-    );
-
+  return (
+    // A classe vai na <section> (caixa de fora)
+    <section className="secao-home">
+        <HomeCarousel />
+      
+    </section>
+  );
 }
 
 export default Home;
