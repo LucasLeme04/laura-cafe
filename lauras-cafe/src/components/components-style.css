@@ -130,6 +130,7 @@ section {
   height: 300px;
   overflow: hidden;
   position: relative;
+  border-radius: 8px 8px 0 0; /* Bordas arredondadas apenas na parte superior */
 }
 
 /* Imagem do produto */
