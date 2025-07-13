@@ -2,11 +2,11 @@ import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 
 // Importando as imagens da pasta assets
-import fachadaGrande from "./assets/fachadaGrande.png";
-import espressoClass from "./assets/espressoClassico.png.png";
-import prensaFrancesa from "./assets/prensaFrancesa.png.png";
-import harioV60 from "./assets/hariov60.png.png";
-import aeropress from "./assets/aeropress.png.png";
+import fachadaGrande from "../assets/fachadaGrande.png";
+import espressoClass from "../assets/espressoClassico.png.png";
+import prensaFrancesa from "../assets/prensaFrancesa.png.png";
+import harioV60 from "../assets/hariov60.png.png";
+import aeropress from "../assets/aeropress.png.png";
 
 // Sobre nós
 // Informações sobre a empresa, história, missão, visão e valores
@@ -14,7 +14,8 @@ import aeropress from "./assets/aeropress.png.png";
 
 function About() {
   return (
-    <Container fluid className="bg-light min-vh-100">
+    <section id="about">
+      <Container fluid className="bg-light min-vh-100">
       {/* Main Content: Conteúdo principal da página */}
       <Container className="py-5">
         {/* Sobre Nós Section: Apresentação da cafeteria e sua história */}
@@ -154,6 +155,7 @@ function About() {
         </section>
       </Container>
     </Container>
+    </section>
   );
 }
 

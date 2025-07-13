@@ -5,7 +5,7 @@ import './App.css'
 import NavbarComponent from './components/Navbar'
 import Footer from './components/Footer'
 
-import Home from './pages/Home'
+import Home from './components/HomeCarousel'
 import About from './pages/About'
 import Menu from './pages/Menu'
 import Contact from './pages/Contact'
