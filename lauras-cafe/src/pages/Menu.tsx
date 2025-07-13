@@ -78,16 +78,15 @@ function Menu() {
     };
 
     return (
-        <section id="cardapio" className="py-5 bg-light">
+        <section id="cardapio" className="menu-section">
             <Container>
                 <h2 className="text-center mb-4 playfair-display-regular section-title">Nossos Produtos</h2>
-                <div className="espacador">
-                    <Carousel
+                <Carousel
                     arrows={true}
                     responsive={responsive}
                     infinite={true}
                     additionalTransfrom={0}
-                    >
+                >
                     {produtos.map((produto) => (
                         <ProductCard
                             key={produto.titulo}
@@ -98,7 +97,6 @@ function Menu() {
                         />
                     ))}
                 </Carousel>
-                </div>
                 <hr className="my-5" />
             </Container>
         </section>
