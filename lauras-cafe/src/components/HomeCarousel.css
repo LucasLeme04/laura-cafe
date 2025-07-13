@@ -1,5 +1,9 @@
 /* ----------------------------- ESPAÇOS---------------------------- */
 
+.home-carousel {
+  margin-top: 100px;;
+}
+
 .carousel-item {
   height: calc(100vh - 100px); /* Altura total menos navbar */
   /* Define uma altura para todos os slides.
