@@ -1,4 +1,3 @@
-import { Col } from 'react-bootstrap';
 import '../components/components-style.css';
 import '../App.css';
 

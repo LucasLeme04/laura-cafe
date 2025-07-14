@@ -4,7 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 
 
 import '../components/components-style.css';
-import ProductCard from '../pages/ProductCard';
+import ProductCard from '../components/ProductCard';
 
 import cappuccinoImg from '../assets/cappuccino.jpg';
 import macchiatoImg from '../assets/macchiato.jpg';
