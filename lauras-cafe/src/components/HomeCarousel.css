@@ -1,0 +1,68 @@
+.home-container{
+    margin-top: 100px; /* Altura do seu navbar */
+    width: 100vw;
+    min-height: calc(100vh - 100px); /* Altura total menos navbar */
+    position: relative;
+}
+
+.carousel {
+  height: 100%;
+}
+
+
+
+/* ----------------------------- ESPAÇOS---------------------------- */
+
+.carousel-caption{
+  /* width: 100vw!; */
+  height: 100%;
+}
+
+
+.carousel-item {
+  height: calc(100vh - 100px); /* Altura total menos navbar */
+  /* Define uma altura para todos os slides.
+     65vh = 65% da altura da tela. Ajuste este valor como quiser.
+     Isso garante que todos os slides tenham a mesma altura. */
+}
+
+.carousel-item img {
+  /* Faz a imagem preencher toda a altura e largura do slide sem distorcer.
+     A imagem será cortada para caber, se necessário. */
+  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 30vh; /* em telas menores, altura menor */
+  }
+}
+
+/* Suas regras para a legenda (.carousel-caption) podem continuar aqui embaixo */
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  left: 0;
+  align-self: self-start;
+  width: 100%;
+}
+
+/* ----------------------------- ---------------------------------- */
+/* ----------------------------- FONTS ----------------------------- */
+.titulo{
+  
+  /* width: auto; */
+    /* align-items: flex-end; */
+    /* text-align: right!important; */
+    /* font-size: 50pt; */
+}
+.subtexto{
+    /* padding: 0!important; */
+    /* margin: 0!important; */
+    /* text-align: center; */
+    /* font-size: 25pt; */
+}

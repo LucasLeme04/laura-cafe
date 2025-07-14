@@ -1,5 +1,7 @@
+
+
 #root {
-  /* max-width: 1280px; */
+  width: 100%;
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
@@ -23,6 +25,24 @@
 
 
 /* ----------------------------- FONTS ----------------------------- */
+ 
+/* JosephShophia <-- definição */
+  @font-face {
+    font-family: 'JosephSophia'; 
+
+    /* 2. Aponte para o arquivo da fonte */
+    src: url('./assets/fonts/josephsophia.ttf') format('ttf');
+
+    font-weight: 400; 
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'JosephSophia';
+    src: url('./assets/fonts/josephsophia.ttf') format('ttf');
+    font-weight: 700; /* 700 é o valor para 'bold' ou 'negrito' */
+    font-style: normal;
+  }
+  /* JosephShophia  */
 
 .lato-thin {
   font-family: "Lato", sans-serif;
@@ -103,6 +123,22 @@
 
 /* ----------------------------- INÍCIO  ----------------------------- */
 
-.home-custom {
-  margin-top: 110px; /* Ajuste para o espaçamento do Navbar */
+
+/* COLE ISTO NO SEU App.css */
+
+.secao-home {
+  justify-content: center!important;
+  align-items: start!important;
+  min-height: auto;
+  min-width: 100%!important; /* Garante que ocupe a largura total */
+  background-color: #442815;
+
+  /* Para centralizar o conteúdo verticalmente */
+  /* display: flex; */
+  
+  object-fit: contain;
+  align-items: center;
+
+  /* Seu espaçamento para a Navbar */
+  margin-top: 100px;
 }
