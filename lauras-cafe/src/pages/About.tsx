@@ -2,11 +2,11 @@ import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 
 // Importando as imagens da pasta assets
-import fachadaGrande from "./assets/fachadaGrande.png";
-import espressoClass from "./assets/espressoClassico.png.png";
-import prensaFrancesa from "./assets/prensaFrancesa.png.png";
-import harioV60 from "./assets/hariov60.png.png";
-import aeropress from "./assets/aeropress.png.png";
+import fachadaGrande from "../assets/fachadaGrande.png";
+import espressoClass from "../assets/espressoClassico.png.png";
+import prensaFrancesa from "../assets/prensaFrancesa.png.png";
+import harioV60 from "../assets/hariov60.png.png";
+import aeropress from "../assets/aeropress.png.png";
 
 // Sobre nós
 // Informações sobre a empresa, história, missão, visão e valores

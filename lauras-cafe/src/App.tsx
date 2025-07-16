@@ -5,7 +5,8 @@ import './App.css'
 import NavbarComponent from './components/Navbar'
 import Footer from './components/Footer'
 
-import Home from './pages/Home'
+import HomeCarousel from './components/HomeCarousel'
+// import Home from './pages/Home'
 import About from './pages/About'
 import Menu from './pages/Menu'
 import Contact from './pages/Contact'
@@ -14,7 +15,7 @@ function App() {
    return (
     <>
       <NavbarComponent />
-      <Home /> {/* <-- Ele só chama a Home */}
+      <HomeCarousel /> {/* <-- Ele só chama a Home */}
       
       <Container>
         <About />
