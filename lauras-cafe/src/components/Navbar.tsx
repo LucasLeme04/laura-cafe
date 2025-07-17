@@ -1,4 +1,5 @@
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 
 // Barra de navegação
@@ -25,23 +26,33 @@ function NavbarComponent() {
           <Navbar.Collapse className="justify-content-end">
             {/* Links à direita */}
             <Nav className="fs-5 nav-items">
-              <Nav.Link className="mx-2 nav-item lato-bold"
-              onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}>
-                Início
+              <Nav.Link className="mx-2 nav-item lato-bold">
+                <Link to="home" smooth={true} duration={500} offset={-100}>
+                  <span className="lato-bold">Início</span>
+                </Link>   
               </Nav.Link>
-              <Nav.Link className="mx-2 nav-item lato-bold"
-              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
-                Sobre nós
+              <Nav.Link className="mx-2 nav-item"
+             >
+                <Link to="about" smooth={true} duration={500} offset={-100}>
+                  <span className="lato-bold">Sobre nós</span>
+                </Link>
               </Nav.Link>
-              <Nav.Link className="mx-2 nav-item lato-bold"
-              onClick={() => document.getElementById('cardapio')?.scrollIntoView({ behavior: 'smooth' })}>
-                Menu
+              <Nav.Link className="mx-2 nav-item">
+                <Link to="cardapio" smooth={true} duration={500} offset={-100}>
+                  <span className="lato-bold">Menu</span>
+                </Link>
               </Nav.Link>
               <Nav.Link className="mx-2">
-                <Button 
-                className="btn-custom lato-bold"
-                variant='warning'
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Contato</Button>
+                <Link
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    offset={-100}
+                >
+                <Button className="btn-custom lato-bold" variant="warning">
+                  Contato
+                </Button>
+                </Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
