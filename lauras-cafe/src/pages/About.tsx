@@ -14,7 +14,7 @@ import aeropress from "../assets/aeropress.png.png";
 
 function About() {
   return (
-    <Container fluid className="bg-light min-vh-100">
+    <Container id="about" fluid className="bg-light min-vh-100">
       {/* Main Content: Conteúdo principal da página */}
       <Container className="py-5">
         {/* Sobre Nós Section: Apresentação da cafeteria e sua história */}
@@ -33,8 +33,10 @@ function About() {
           </Col>
           {/* Texto de apresentação e missão da cafeteria */}
           <Col md={7} className="d-flex flex-column justify-content-center">
-            <h1 className="preparo-title">Sobre Nós</h1>
-            <p className="preparo-description">
+          <div className="preparo-title">
+            <h1 className="playfair-display-bold">Sobre Nós</h1>
+          </div>
+            <p className="preparo-description lato-regular">
               Nossa história começou com a paixão de Laura por cafés especiais e
               pelo desejo de compartilhar experiências únicas em um ambiente
               onde cada detalhe convida à pausa e à apreciação. Inspirados pelos
@@ -42,7 +44,7 @@ function About() {
               seleção cuidadosa de grãos de alta qualidade, métodos diversos de
               extração e um atendimento que acolhe como um abraço.
             </p>
-            <p className="preparo-description">
+            <p className="preparo-description lato-regular">
               Nosso espaço foi pensado para ser uma extensão da sua casa:
               aconchegante, elegante e com aquele aroma irresistível no ar.
               Valorizamos a origem dos grãos, a sustentabilidade dos produtores
@@ -56,10 +58,12 @@ function About() {
 
         {/* Nossos Cafés: Apresentação dos métodos de preparo oferecidos */}
         <section id="preparo" className="mb-5">
-          <h2 className="preparo-title">Nossos Cafés</h2>
-          <p className="preparo-description">
-            Acreditamos que um bom café vai muito além do sabor: ele desperta
-            memórias, aquece encontros e cria refúgios em meio ao cotidiano.
+        <div className="preparo-title-sm">
+          <h2 className="playfair-display-bold">Nossos Métodos</h2>
+        </div>
+          <p className="preparo-description lato-regular">
+            Acreditamos que um bom café vai muito além do sabor: ele desperta 
+            <span className="lato-regular-italic"> memórias</span>, aquece <span className="lato-regular-italic"> encontros</span> e cria <span className="lato-regular-italic"> refúgios</span> em meio ao cotidiano...
           </p>
           <Row className="justify-content-center g-4">
             {/* Espresso Clássico*/}
@@ -75,10 +79,9 @@ function About() {
                 alt="Espresso icon"
                 style={{ height: "200px" }}
               />
-              <h3 className="preparo-item-title">Espresso Clássico</h3>
+              <h3 className="preparo-item-title playfair-display-regular">Espresso Clássico</h3>
               <p
-                className="preparo-item-description text-center"
-                style={{ fontFamily: "Lato, sans-serif" }}
+                className="preparo-item-description text-center lato-regular"
               >
                 O clássico italiano, base para muitas de nossas bebidas.
                 Intenso, aromático e com uma crema perfeita.
@@ -97,10 +100,9 @@ function About() {
                 alt="Prensa Francesa icon"
                 style={{ height: "200px" }}
               />
-              <h3 className="preparo-item-title">Prensa Francesa</h3>
+              <h3 className="preparo-item-title playfair-display-regular">Prensa Francesa</h3>
               <p
-                className="preparo-item-description text-center"
-                style={{ fontFamily: "Lato, sans-serif" }}
+                className="preparo-item-description text-center lato-regular"
               >
                 Um método que resulta em um café encorpado e rico em óleos,
                 preservando sabores complexos.
@@ -119,10 +121,9 @@ function About() {
                 alt="Hario V60 icon"
                 style={{ height: "200px" }}
               />
-              <h3 className="preparo-item-title">Hario V60</h3>
+              <h3 className="preparo-item-title playfair-display-regular">Hario V60</h3>
               <p
-                className="preparo-item-description text-center"
-                style={{ fontFamily: "Lato, sans-serif" }}
+                className="preparo-item-description text-center lato-regular"
               >
                 Para os amantes de um café mais limpo e suave, destacando a
                 acidez e as notas florais e frutadas do grão.
@@ -141,10 +142,9 @@ function About() {
                 alt="Aeropress icon"
                 style={{ height: "200px" }}
               />
-              <h3 className="preparo-item-title">Aeropress</h3>
+              <h3 className="preparo-item-title playfair-display-regular">Aeropress</h3>
               <p
-                className="preparo-item-description text-center"
-                style={{ fontFamily: "Lato, sans-serif" }}
+                className="preparo-item-description text-center lato-regular"
               >
                 Versátil e rápido, produz um café com baixa acidez e sem
                 amargor, realçando a doçura natural do café.
