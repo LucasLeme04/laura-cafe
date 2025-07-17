@@ -154,7 +154,12 @@ section {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.product-description-text {
+  text-align: left;
 }
 
 /* Categoria */
@@ -164,10 +169,10 @@ section {
 }
 
 /* Título do produto */
-.product-card-body h4 {
+.product-card-body h3 {
   color: var(--marrom_tipo1);
   margin-bottom: 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1.70rem;
 }
 
 /* Descrição */
