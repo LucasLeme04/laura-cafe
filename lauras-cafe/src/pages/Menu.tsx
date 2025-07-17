@@ -65,13 +65,18 @@ function Menu() {
             items: 3,
             slidesToSlide: 1
         },
+        notebook: {
+            breakpoint: { max: 1200, min: 1024 },
+            items: 2,
+            slidesToSlide: 1
+        },
         tablet: {
-            breakpoint: { max: 1024, min: 464 },
+            breakpoint: { max: 1024, min: 770 },
             items: 2,
             slidesToSlide: 1
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 770, min: 0 },
             items: 1,
             slidesToSlide: 1
         }
@@ -88,6 +93,7 @@ function Menu() {
                     additionalTransfrom={0}
                 >
                     {produtos.map((produto) => (
+                        
                         <ProductCard
                             key={produto.titulo}
                             img={produto.img}
