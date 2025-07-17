@@ -142,3 +142,90 @@
   /* Seu espaçamento para a Navbar */
   margin-top: 100px;
 }
+
+.preparo-title, .preparo-title-sm {
+  color: var(--marrom_tipo3);
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.preparo-title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 2px;
+  background: var(--dourado_tipo1);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.preparo-title-sm::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 170px;
+  height: 2px;
+  background: var(--dourado_tipo1);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.preparo-item-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  color: var(--marrom_tipo3);
+}
+
+.preparo-item-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid #b88a3c;
+}
+
+/* ------------------------------ CONTACT ----------------------------------- */
+
+/* Títulos da seção */
+.contact-title {
+  color: #442815;
+}
+
+/* Faz o texto alinhar à esquerda */
+.text-left {
+  text-align: left;
+}
+
+/* Remove cor azul de texto hiperlink */
+.no-decoration {
+  text-decoration: none;
+  color: black;
+}
+
+/* Formulário de contato */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Alinha o botão à direita */
+.btn-form {
+    width: 100px;
+    align-self: end;
+}
+
+
+/* Adiciona linha que separa os contatos do formulário */
+.border-left-custom {
+  border-left: 1px solid #b88a3c;
+  height: 80%;
+}
