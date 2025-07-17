@@ -80,7 +80,7 @@ function Menu() {
     return (
         <section id="cardapio" className="menu-section">
             <Container>
-                <h2 className="text-center mb-4 playfair-display-regular section-title">Nossos Produtos</h2>
+                <h1 className="text-center mb-4 playfair-display-regular section-title">Nossos Produtos</h1>
                 <Carousel
                     arrows={true}
                     responsive={responsive}
@@ -97,7 +97,6 @@ function Menu() {
                         />
                     ))}
                 </Carousel>
-                <hr className="my-5" />
             </Container>
         </section>
     );
