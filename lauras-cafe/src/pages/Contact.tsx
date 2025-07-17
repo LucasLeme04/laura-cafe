@@ -21,13 +21,13 @@ function Contact() {
                         <Form className="contact-form">
                             <Row className="mb-3">
                                 <Col md={6}>
-                                    <Form.Group controlId="formNome" className='text-left'>
+                                    <Form.Group controlId="formNome" className='text-left form-input'>
                                         <Form.Label className="lato-regular">Nome</Form.Label>
                                         <Form.Control type="text" placeholder="Insira seu nome" />
                                     </Form.Group>
                                 </Col>
                                 <Col md={6}>
-                                    <Form.Group controlId="formEmail" className='text-left'>
+                                    <Form.Group controlId="formEmail" className='text-left form-input'>
                                         <Form.Label className="lato-regular">E-mail</Form.Label>
                                         <Form.Control type="email" placeholder="Insira seu endereço de e-mail" />
                                     </Form.Group>
@@ -45,8 +45,8 @@ function Contact() {
                         </Form>
                     </Col>
 
-                    <Col md={3} className="mt-5 mt-md-0 ps-4 border-left-custom">
-                        <h4 className="fw-bold text-brown mb-4 text-left playfair-display-regular contact-title">Contatos</h4>
+                    <Col md={3} className="contact-info-aside mt-md-0 ps-4 border-left-custom">
+                        <h4 className="fw-bold text-brown mb-3 text-left playfair-display-regular contact-title">Contatos</h4>
                         <p className='text-left lato-regular'><CiMail /> <a href="mailto:laura.detal@laurascafe.com.br" className="no-decoration">laura.detal@laurascafe.com.br</a></p>
                         <p className='text-left lato-regular' ><FaPhone /> (31) 99999 - 9999</p>
                         <p className='text-left lato-regular'><FaInstagram /> lauras_cafe.bh</p>
