@@ -17,11 +17,9 @@ function App() {
       <NavbarComponent />
       <HomeCarousel /> {/* <-- Ele só chama a Home */}
       
-      <Container>
         <About />
         <Menu />
         <Contact />
-      </Container>
       
       <Footer />
     </>
