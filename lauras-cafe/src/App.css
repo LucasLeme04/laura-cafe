@@ -223,9 +223,25 @@
     align-self: end;
 }
 
+.form-input {
+  margin-top: 15px;
+}
+
+/* Container das informações de contatos */
+.contact-info-aside {
+  margin-top: 10px;
+}
 
 /* Adiciona linha que separa os contatos do formulário */
 .border-left-custom {
   border-left: 1px solid #b88a3c;
   height: 80%;
+}
+
+/* Tira borda para caso a tela seja menor que 770px */
+@media (max-width: 770px) {
+  .border-left-custom {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
 }
