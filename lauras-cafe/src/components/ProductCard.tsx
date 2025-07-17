@@ -13,8 +13,8 @@ function ProductCard(props: { img: string; titulo: string; descricao: string; sa
 
             <div className="product-card-body">
                 <p className="text-muted lato-regular mb-1">Cafés</p>
-                <h4 className="playfair-display-regular">{titulo}</h4>
-                <p className="lato-regular">{descricao}</p>
+                <h3 className="playfair-display-regular">{titulo}</h3>
+                <p className="product-description-text lato-regular">{descricao}</p>
                 <p className="lato-regular fw-bold card-sabor">Sabor: <span className="fw-normal">{sabor}</span></p>
             </div>
         </div>
