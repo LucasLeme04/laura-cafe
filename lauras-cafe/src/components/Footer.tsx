@@ -41,18 +41,30 @@ function Footer() {
                 <Col xs={3} md={2} className="footer-item">
                   <h5 className="playfair-display-regular">Redes sociais</h5>
                   <ul className="list-unstyled d-flex">
-                     {[FaInstagram, FaFacebook, FaWhatsapp].map(
-                        (Icon, i) => (
-                            <Button
-                                key={i}
-                                className="btn-icon-footer"
-                                variant= "outline"
-                                href="#!"
-                            >
-                            <Icon size={24} />
-                        </Button>
-                     )
-                    )}
+                    <Button
+                        className="btn-icon-footer"
+                        variant= "outline"
+                        href="https://www.instagram.com/visaojrufop/"
+                        target="_blank" rel="noopener noreferrer"
+                    >
+                      <FaInstagram size={24} />
+                    </Button>
+                    <Button
+                        className="btn-icon-footer"
+                        variant= "outline"
+                        href="https://www.facebook.com/visaojrufop/"
+                        target="_blank" rel="noopener noreferrer"
+                    >
+                      <FaFacebook size={24} />
+                    </Button>
+                    <Button
+                        className="btn-icon-footer"
+                        variant= "outline"
+                        href="#!"
+                        
+                    >
+                      <FaWhatsapp size={24} />
+                    </Button>
                   </ul>
                 </Col>
               
