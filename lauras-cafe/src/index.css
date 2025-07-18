@@ -18,6 +18,7 @@
 --cinza_tipo1: #33302F;
 --bege_tipo1: #F7EBE7;
 --bege_tipo2: #F6F1F0;
+--bege_tipo3: #F6F2F0;
 --dourado_tipo1: #D39D38;
 
 
@@ -29,6 +30,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -43,11 +50,18 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
+  height: 100%;
   /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
+
+main {
+  flex: 1;
+}
+
 
 h1 {
   font-size: 3.2em;
