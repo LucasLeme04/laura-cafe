@@ -17,3 +17,6 @@ npm run dev
 
 ```
 
+## Protótipo e Manual Visual
+O protótipo do projeto foi feito no [Figma](https://www.figma.com/design/45GJr5BKEd9tziTkqJyn04/Laura-s-Caf%C3%A9?node-id=8-151), e apresenta a ideia inicial do sistema, além de conter informações sobre a paleta de cores, fontes utilizadas, etc. Além disso, o manual visual do site está disponível neste repositório em `lauras-cafe/manual_id_visual_laurascoffee.pdf`.
+
