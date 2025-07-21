@@ -211,7 +211,7 @@ section {
 
 /* Sabor */
 .card-sabor {
-  color: var(--marrom_tipo1);
+  /* color: var(--marrom_tipo1); */
   font-size: 0.9em;
   margin-top: auto;
 }
