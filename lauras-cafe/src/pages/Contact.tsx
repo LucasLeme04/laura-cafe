@@ -8,11 +8,12 @@ import { useState } from 'react';
 // Contatos + Agendamentos
 // Formulário de contato para dúvidas, sugestões e agendamentos e informações de contato da empresa
 function Contact() {
-  const [formData, setFormData] = useState({
-    nome: '',
-    email: '',
-    mensagem: ''
-  });
+    const [ formError, setFormError ] = useState(false);
+    const [ formData, setFormData ] = useState({
+        nome: '',
+        email: '',
+        mensagem: ''
+    });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;
@@ -26,7 +27,11 @@ function Contact() {
 
     if (!nome || !email || !mensagem) {
       alert("Por favor, preencha todos os campos.");
+        setFormError(true);
       return;
+      
+    } else {
+        setFormError(false);
     }
 
     console.log("Formulário enviado:", formData);
@@ -54,7 +59,11 @@ function Contact() {
                                         <Form.Control 
                                         type="text" 
                                         placeholder="Insira seu nome"
-                                        onChange={handleChange}/>
+                                        onChange={handleChange}
+                                        isInvalid={formError && !formData.nome}/>
+                                    <Form.Control.Feedback type="invalid">
+                                        Insira seu nome.
+                                    </Form.Control.Feedback>
                                     </Form.Group>
                                 </Col>
                                 <Col md={6}>
@@ -63,7 +72,11 @@ function Contact() {
                                         <Form.Control 
                                         type="email" 
                                         placeholder="Insira seu endereço de e-mail" 
-                                        onChange={handleChange}/>
+                                        onChange={handleChange}
+                                        isInvalid={formError && !formData.email}/>
+                                        <Form.Control.Feedback type="invalid">
+                                            Informe um e-mail válido.
+                                        </Form.Control.Feedback>
                                     </Form.Group>
 
                                 </Col>
@@ -75,7 +88,11 @@ function Contact() {
                                 as="textarea" 
                                 rows={4} 
                                 placeholder="Digite aqui sua mensagem" 
-                                onChange={handleChange}/>
+                                onChange={handleChange}
+                                isInvalid={formError && !formData.mensagem}/>
+                                <Form.Control.Feedback type="invalid">
+                                    Por favor, preencha este campo.
+                                </Form.Control.Feedback>
                             </Form.Group>
 
                             <Button 
