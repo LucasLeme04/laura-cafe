@@ -26,10 +26,10 @@ function Contact() {
     const { nome, email, mensagem } = formData;
 
     if (!nome || !email || !mensagem) {
-      alert("Por favor, preencha todos os campos.");
+        alert("Por favor, preencha todos os campos.");
         setFormError(true);
-      return;
-      
+        return;
+
     } else {
         setFormError(false);
     }
@@ -60,6 +60,7 @@ function Contact() {
                                         type="text" 
                                         placeholder="Insira seu nome"
                                         onChange={handleChange}
+                                        value={formData.nome}
                                         isInvalid={formError && !formData.nome}/>
                                     <Form.Control.Feedback type="invalid">
                                         Insira seu nome.
@@ -73,6 +74,7 @@ function Contact() {
                                         type="email" 
                                         placeholder="Insira seu endereço de e-mail" 
                                         onChange={handleChange}
+                                        value={formData.email}
                                         isInvalid={formError && !formData.email}/>
                                         <Form.Control.Feedback type="invalid">
                                             Informe um e-mail válido.
@@ -89,6 +91,7 @@ function Contact() {
                                 rows={4} 
                                 placeholder="Digite aqui sua mensagem" 
                                 onChange={handleChange}
+                                value={formData.mensagem}
                                 isInvalid={formError && !formData.mensagem}/>
                                 <Form.Control.Feedback type="invalid">
                                     Por favor, preencha este campo.
